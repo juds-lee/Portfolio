@@ -1,0 +1,56 @@
+@import"./variables";
+
+header {
+    background-color: $paleYellow;
+    height: 100vh;
+}
+nav {
+    background-color: $paleYellow;
+    width: 100%;
+}
+
+.navHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+        padding-left: 0;
+    }
+    li {
+        padding: 1rem;
+    }
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerWrapper {
+//    display: grid;
+//    grid-template-columns: repeat(2, 2fr);
+//    place-items: center;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.headerContainer{
+    .judyLee{
+        background-color: pink;
+        padding: .4rem 1.2rem;
+        border-radius: .3rem;
+    }
+}
+.typed {
+    margin-bottom: 3rem;
+}
+.viewWorksBtn {
+    padding:.7rem 1rem;
+    border: none;
+    border-radius: .2rem;
+    background-color: pink;
+}

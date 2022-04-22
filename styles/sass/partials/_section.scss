@@ -1,0 +1,144 @@
+@import"./variables";
+
+.aboutMeSection {
+    padding: 1rem 0;
+    background-color: pink;
+}
+.aboutMe {
+    padding: 2rem 0;
+    h2 {
+        margin-top: 0;
+        background-color: antiquewhite;
+        width: 30%;
+        margin: 0 auto;
+    }
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.portfolioSection {
+background-color: $paleYellow;
+    padding: 2rem 0;
+    height: 100vh;
+    .projectContainer {
+        display: flex;
+        padding: 1rem 0;
+        gap: 3rem;
+    }
+}
+
+.portfolioContainer {
+    padding: 1rem 0;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        margin-bottom: 0;
+        ;
+    }
+}
+.project {
+    position: relative;
+    width: 100%;
+    .projectImage {
+        display: block;
+        width: 100%;
+        border-radius: .4rem;
+    }
+    .imageOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imageOverlay:hover>* {
+        transform: translateY(0);
+    }
+
+    .imageOverlay>* {
+        transform: translateY(-20px);
+        transition: 0.25s;
+    }
+
+    .imageOverlay:hover {
+        opacity: 1
+    }
+}
+
+.modalBG {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+   
+}
+.modalActive {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.modal {
+    background-color: white;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.modalContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    gap: 1.5rem;
+}
+
+// img {
+//     height: 160%;
+// }
+.techStack {
+    background-color: pink;
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+.techStackContainer{
+    padding: 1rem 0;
+}
+
+.techStackList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    width: 100%;
+    margin: calc()
+}
