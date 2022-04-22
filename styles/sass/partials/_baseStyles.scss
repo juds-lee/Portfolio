@@ -17,6 +17,12 @@ li {
 button, a {
     cursor: pointer;
 }
+
+button {
+    text-decoration: none;
+    background: none;
+    border: none;
+}
 .containerWrapper {
     width: 90%;
     margin: 0 auto;

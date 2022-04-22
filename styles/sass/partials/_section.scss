@@ -1,24 +1,59 @@
 @import"./variables";
 
 .aboutMeSection {
-    padding: 1rem 0;
+    padding: 5rem 0;   
     background-color: pink;
-}
-.aboutMe {
-    padding: 2rem 0;
-    h2 {
-        margin-top: 0;
-        background-color: antiquewhite;
-        width: 30%;
-        margin: 0 auto;
+    height: 100%;
+    position: relative;
+    ::after {
+        content: "";
+        position: absolute;
+        // background: url(../../../assets/asset1a.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.25;
+        
     }
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
 }
+.aboutMeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      justify-content: center;
+  }
+  h3 {
+    text-align: center;
+    justify-content: center;
+    font-size: 2.4rem;
+  }
+  p {
+       text-align: center;
+  }
 
+.techStackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        color: white;
+        font-weight: 400;
+        font-size: 2.2rem;
+        text-align: right;
+    }
+    .stack {
+        display: block;
+    }
+    .techStackList {
+        display: flex;
+        gap: 1.4rem
+    }
+}
 .portfolioSection {
-background-color: $paleYellow;
+    background-color: $paleYellow;
     padding: 2rem 0;
     height: 100vh;
     .projectContainer {
@@ -102,16 +137,34 @@ background-color: $paleYellow;
 .modalButtons {
     display: flex;
     justify-content: center;
-
+    justify-content: cenfleter;
+    text-align: center;
+    h4 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 1rem 0;
+        font-weight: 500;
+    }
 }
 
 .modal {
     background-color: white;
-    height: 80%;
+    height: 90%;
     width: 70%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5em;
+        color: grey;
+        &:hover{
+            color: black;
+        }
+    }
 }
 
 .modalContent {
@@ -119,26 +172,46 @@ background-color: $paleYellow;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
     gap: 1.5rem;
-}
-
-// img {
-//     height: 160%;
-// }
-.techStack {
-    background-color: pink;
-    ul {
-        margin-bottom: 0;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    img {
+        object-fit: contain;
+       height: 100%;
+    }
+    .modalImg{
+        height: 100%;
     }
 }
+.modalDescription {
+    max-height: 100%;
+    h5 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    p {
+        margin: 1rem 0;
+        line-height: 1.5rem;
+    }
+} 
 
-.techStackContainer{
-    padding: 1rem 0;
-}
+// .techStack {
+//     background-color: pink;
+//     ul {
+//         margin-bottom: 0;
+//     }
+// }
 
-.techStackList{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
-    width: 100%;
-    margin: calc()
-}
+// .techStackContainer{
+//     padding: 1rem 0;
+// }
+
+// .techStackList{
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 3em;
+//     width: 100%;
+//     margin: calc()
+// }
