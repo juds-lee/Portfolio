@@ -36,10 +36,14 @@ p {
 }
 
 .devIcon {
-   color: white;
+   color: rgb(90, 90, 90);
     font-size: 5rem;
     display: flex;
     justify-content: center;
+}
+
+.xs {
+    font-size: 4.5rem;
 }
 .block {
     display: block;
