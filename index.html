@@ -20,10 +20,10 @@
                             data-bs-target="#header-nav"><span></span><span></span><span></span></button> -->
                 <div class="navHeader">
                     <ul class="navBar">
-                        <li class="nav-item"><a class="navLink smooth-scroll active" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="navLink smooth-scroll" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="navLink smooth-scroll" hrefs="#my works">My Works</a></li>
-                        <li class="nav-item"><a class="navLink smooth-scroll" href="#contact">Contact Me</a></li>
+                        <li class="navItem home"><a class="navLink" href="#home">Home</a></li>
+                        <li class="navItem about"><a class="navLink" href="#about">About Me</a></li>
+                        <li class="navItem myWorks"><a class="navLink" href="#myworks">My Works</a></li>
+                        <li class="navItem contact"><a class="navLink" href="#contact">Contact Me</a></li>
                     </ul>
                     <div>
                         <h2 class="logo"> {Judy Lee} </h2>
@@ -32,11 +32,11 @@
             </div>
         </nav>
 </header>
-    <section class="heroSection">
+    <section id="home" class="heroSection">
             <div class="containerWrapper headerWrapper">
                 <div class="headerContainer">
                     <h1>Hi there! My name is <span class="judyLee">Judy Lee</span> <span class="block">and I am a</span><span
-                            class="typed">Developer</span></h1
+                            class="typed">Developer</span></h1>
                     <p class="text">based in Toronto, Canada.</span>
                     <div class="headerLinks">
                         <button class="viewWorksBtn"><a href="">View my works</a></button>
@@ -47,7 +47,7 @@
                 </div>
             </div>
     </section>
-    <section class="aboutMeSection">
+    <section class="aboutMeSection" id="about">
     <div class="aboutMeWrapper containerWrapper">
         <div class="aboutMeInfo">
             <h2 class="h2Header">About Me</h2>
@@ -78,7 +78,7 @@
     </div>
     </section>
 
-    <section class="portfolioSection">
+    <section class="portfolioSection" id="myWorks">
         <div class="portfolioContainer containerWrapper">
             <h2>Here are my projects</h2>
             <div class="projectContainer">
@@ -123,12 +123,25 @@
                         <img src="./assets/asset1a.jpg" alt="">
                     </div>
                     <div class="modalDescription">
-                        <h5>Project Info</h5>
+                        <div class="projectInfo descriptionWrapper">
+                            <h5>Project Info</h5>
                             <p>Quiztionary is a dictionary game where players must match the correct word to the definition. It relies on two different API's to 
                                 generate random words and to procure a matching definition. This game was creating using Vanilla.Js, HTML5, and CSS+SASS. Made in collaboration 
                                 with Stephen Korzenstien.</p>
-                            <button><a href="">View Demo</a></button>
-                            <button><a href="">View Source Code</a></button>
+                        </div>
+                        <div class="projectDetails descriptionWrapper">
+                            <div class="viewButton">
+                                <button class="demoButton"><a href="">View Demo</a></button>
+                                <button class="sourceButton"><a href="">View Source Code</a></button>
+                            </div>
+                            <div class="techUsed descriptionWrapper">
+                                <p>technologies used:
+                                    <li><i class="devIcon techIcon devicon-sass-original portfolioIcon"></i></li>
+                                    <li><i class="devIcon devicon-javascript-plain xs portfolioIcon"></i></li>
+                                    <li><i class="devIcon devIcon devicon-html5-plain-wordmark portfolioIcon"></i></li>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,6 +149,7 @@
     <footer>
         <div class="ctaSection"></div>
     </footer>
+    
  
     <!-- <script src="vendor/typed/typed.min.js"></script>
     <script src="./script/script.js"></script> -->

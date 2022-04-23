@@ -67,10 +67,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     h2 {
         margin-bottom: 0;
-        ;
     }
 }
 .project {
@@ -137,7 +135,6 @@
     justify-content: center;
     justify-content: cenfleter;
     text-align: center;
-    border: 1px solid red;
     h4 {
         font-size: 2rem;
         padding: 0;
@@ -154,7 +151,6 @@
     flex-direction: column;
     text-align: center;
     position: relative;
-    border: 1px solid red;
     .close {
         position: absolute;
         top: 1rem;
@@ -171,26 +167,43 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
-    height: 100%;
+    height: 92%;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    border: 1px solid red;
     .modalImg {
         height: 90%;
-        border: 1px solid red;
     }
     img {
         object-fit: contain;
-       height: 700px;
-       
+       height: 100%;
     }
-   
+}
+
+.viewButton{
+    display: flex;
+    justify-content: space-around;
+    button {
+        padding: .8rem .7rem;
+       width: 40%;
+       background-color: pink;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+.descriptionWrapper {
+    width: 95%;
+    margin: 0 auto;
 }
 .modalDescription {
     max-height: 100%;
     width: 90%;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px dotted pink;
     height: 90%;
     margin: 0 auto;
     h5 {
@@ -204,7 +217,11 @@
         text-align: left;
     }
 } 
-
+.techUsed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 // .techStack {
 //     background-color: pink;
 //     ul {
