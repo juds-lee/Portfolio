@@ -20,10 +20,10 @@
                             data-bs-target="#header-nav"><span></span><span></span><span></span></button> -->
                 <div class="navHeader">
                     <ul class="navBar">
-                        <li class="navItem home"><a class="navLink" href="#home">Home</a></li>
-                        <li class="navItem about"><a class="navLink" href="#about">About Me</a></li>
-                        <li class="navItem myWorks"><a class="navLink" href="#myworks">My Works</a></li>
-                        <li class="navItem contact"><a class="navLink" href="#contact">Contact Me</a></li>
+                        <li class="navItem"><a class="navLink home" href="#home">Home</a></li>
+                        <li class="navItem"><a class="navLink about" href="#about">About Me</a></li>
+                        <li class="navItem"><a class="navLink myWorks" href="#myWorks">My Works</a></li>
+                        <li class="navItem"><a class="navLink contact" href="#contact">Contact Me</a></li>
                     </ul>
                     <div>
                         <h2 class="logo"> {Judy Lee} </h2>
@@ -78,31 +78,38 @@
     </div>
     </section>
 
-    <section class="portfolioSection" id="myWorks">
+    <section id="myWorks" class="portfolioSection" >
         <div class="portfolioContainer containerWrapper">
             <h2>Here are my projects</h2>
             <div class="projectContainer">
                 <div class="project">
-                    <a class="learnMore">
+                    <a href="#" class="learnMore" id="quiztionary">
                             <img src="./assets/asset1.png" class="projectImage"  alt="example photo of project">
                             <!-- <h4>Quiztionary</h4> -->
                         <div class="imageOverlay">
                             <p class="learnMore">click to learn more</p>
                         </div>
+                        <a>
+                            <h4>Quiztionary</h4>
+                        </a>
                     </a>
-                    <h4>Quiztionary</h4>
+                   
                 </div>
                 <div class="project">
-                    <img src="./assets/asset2.png" class="projectImage" alt="example photo of project">
-            
-                    <div class="imageOverlay">
-                        <p>click to learn more</p>
-                    </div>
-                    <h4>Under The Sea</h4>
+                    <a href="#" class="learnMore" id="underthesea">
+                        <img src="./assets/asset2.png" class="projectImage" alt="example photo of project">
+                        <!-- <h4>Quiztionary</h4> -->
+                        <div class="imageOverlay">
+                            <p class="learnMore">click to learn more</p>
+                        </div>
+                        <a>
+                            <h4>Under The Sea</h4>
+                        </a>
+                    </a>
+                
                 </div>
                 <div class="project">
                     <img src="./assets/asset1.png" class="projectImage" alt="example photo of project">
-                    
                     <div class="imageOverlay">
                         <p>click to learn more</p>
                     </div>
@@ -125,13 +132,10 @@
                     <div class="modalDescription">
                         <div class="projectInfo descriptionWrapper">
                             <h5>Project Info</h5>
-                            <p>Quiztionary is a dictionary game where players must match the correct word to the definition. It relies on two different API's to 
-                                generate random words and to procure a matching definition. This game was creating using Vanilla.Js, HTML5, and CSS+SASS. Made in collaboration 
-                                with Stephen Korzenstien.</p>
                         </div>
                         <div class="projectDetails descriptionWrapper">
                             <div class="viewButton">
-                                <button class="demoButton"><a href="">View Demo</a></button>
+                                <button><a class="demoButton" href="">View Demo</a></button>
                                 <button class="sourceButton"><a href="">View Source Code</a></button>
                             </div>
                             <div class="techUsed descriptionWrapper">
@@ -146,11 +150,11 @@
                 </div>
             </div>
         </div>
+      
     <footer>
         <div class="ctaSection"></div>
+        <div></div>
     </footer>
-    
- 
     <!-- <script src="vendor/typed/typed.min.js"></script>
     <script src="./script/script.js"></script> -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>

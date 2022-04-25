@@ -49,11 +49,17 @@ nav {
     background-color: pink;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 250ms ease-in
+    transition: transform 250ms ease-in;
 }
 
-.navLink:hover::after{
+.navLink:hover::after {
     transform: scaleX(1);
+}
+
+.scrollActive {
+    border-bottom: 2px solid pink;
+    display: inline-block;
+
 }
 
 .navBar {
