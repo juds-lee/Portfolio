@@ -134,12 +134,13 @@
 }
 
 @media (max-width: 570px) {
+    .sticky {
+        background-color: inherit;
+    }
     .navHeader {
         display: none;
     }
-    .sticky {
-        background-color: $paleYellow;
-    }
+  
     .hamburger {
         display: block;
     }

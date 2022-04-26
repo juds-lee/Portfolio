@@ -1,5 +1,5 @@
 header {
-  background-color: #fceaaf;
+  background-color: none;
   height: 5rem;
   position: fixed;
   width: 100%;
@@ -288,6 +288,10 @@ h3 {
 
 p {
   text-align: center;
+}
+
+.techSection {
+  background-color: #fceaaf;
 }
 
 .techStackContainer {
@@ -955,7 +959,7 @@ input[type="checkbox"]:focus + label {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 3rem 0 0 3rem;
+  padding: 1rem 0 0 1rem;
   display: none;
 }
 
@@ -1091,11 +1095,11 @@ input[type="checkbox"]:focus + label {
 }
 
 @media (max-width: 570px) {
+  .sticky {
+    background-color: inherit;
+  }
   .navHeader {
     display: none;
-  }
-  .sticky {
-    background-color: #fceaaf;
   }
   .hamburger {
     display: block;
@@ -1176,7 +1180,7 @@ footer h5 {
 
 input,
 textarea {
-  border: 1px solid pink;
+  border: 2px solid pink;
   margin-bottom: .6rem;
   width: 100%;
 }
