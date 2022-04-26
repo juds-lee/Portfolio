@@ -30,16 +30,34 @@
                     </div>
                 </div>
             </div>
+            <button class="hamburger"><i class="fas fa-hamburger"></i></button>
         </nav>
+        
+        <div class="slideOutNav">
+            <div class="buttonContainer">
+                <button class="closeMenuButton">
+                  X
+                </button>
+            </div>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#myWorks">My Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
 </header>
     <section id="home" class="heroSection">
             <div class="containerWrapper headerWrapper">
                 <div class="headerContainer">
                     <h1>Hi there! My name is <span class="judyLee">Judy Lee</span> <span class="block">and I am a</span><span
-                            class="typed">Developer</span></h1>
+                        class="typed">Developer</span></h1>
                     <p class="text">based in Toronto, Canada.</span>
                     <div class="headerLinks">
-                        <button class="viewWorksBtn"><a href="">View my works</a></button>
+                        <button class="viewWorksBtn"><a href="#myWorks">View my works</a></button>
                     </div>
                 </div>
                 <div>
@@ -71,8 +89,6 @@
                 <li><i class="devIcon devicon-jquery-plain-wordmark"></i></li>
                 <li><i class="devIcon devicon-javascript-plain xs"></i></li>
                 <li><i class="devIcon devicon-bootstrap-plain"></i></li>
-
-
             </ul>
        </div>
     </div>
@@ -80,10 +96,10 @@
 
     <section id="myWorks" class="portfolioSection" >
         <div class="portfolioContainer containerWrapper">
-            <h2>Here are my projects</h2>
+            <h2>My projects</h2>
             <div class="projectContainer">
                 <div class="project">
-                    <a href="#" class="learnMore" id="quiztionary">
+                    <a class="learnMore" id="quiztionary">
                             <img src="./assets/asset1.png" class="projectImage"  alt="example photo of project">
                             <!-- <h4>Quiztionary</h4> -->
                         <div class="imageOverlay">
@@ -96,7 +112,7 @@
                    
                 </div>
                 <div class="project">
-                    <a href="#" class="learnMore" id="underthesea">
+                    <a class="learnMore" id="underthesea">
                         <img src="./assets/asset2.png" class="projectImage" alt="example photo of project">
                         <!-- <h4>Quiztionary</h4> -->
                         <div class="imageOverlay">
@@ -127,33 +143,35 @@
                 </div>
                 <div class="modalContent">
                     <div class="modalImg">
-                        <img src="./assets/asset1a.jpg" alt="">
+                
                     </div>
                     <div class="modalDescription">
                         <div class="projectInfo descriptionWrapper">
                             <h5>Project Info</h5>
+                        </div>
+                        <div class="techUsed descriptionWrapper">
+                            <p>technologies used:
+                                <li class="techIcons"><i class="devIcon techIcon devicon-sass-original portfolioIcon"></i></li>
+                                <li class="techIcons"><i class="devIcon devicon-javascript-plain xs portfolioIcon"></i></li>
+                                <li class="techIcons"><i class="devIcon devIcon devicon-html5-plain-wordmark portfolioIcon"></i></li>
+                            </p>
                         </div>
                         <div class="projectDetails descriptionWrapper">
                             <div class="viewButton">
                                 <button><a class="demoButton" href="">View Demo</a></button>
                                 <button class="sourceButton"><a href="">View Source Code</a></button>
                             </div>
-                            <div class="techUsed descriptionWrapper">
-                                <p>technologies used:
-                                    <li><i class="devIcon techIcon devicon-sass-original portfolioIcon"></i></li>
-                                    <li><i class="devIcon devicon-javascript-plain xs portfolioIcon"></i></li>
-                                    <li><i class="devIcon devIcon devicon-html5-plain-wordmark portfolioIcon"></i></li>
-                                </p>
-                            </div>
+                    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      
+  <section class="ctaSection">
+
+  </section>
     <footer>
-        <div class="ctaSection"></div>
-        <div></div>
+    
     </footer>
     <!-- <script src="vendor/typed/typed.min.js"></script>
     <script src="./script/script.js"></script> -->
