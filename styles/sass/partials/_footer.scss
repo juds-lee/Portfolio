@@ -1,19 +1,41 @@
 footer {
     background-color: rgb(238, 234, 195);
-    height: 70vh;
+    height: 100%;;
+    padding: 4rem 0;
+   
     h5 {
         font-size: 2rem;
     }
 }
+.footerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
 
-form > * {
-  
+.formDescription {
+    text-align: right;
+    p {
+        text-align: right;
+    }
 }
 .contactformContainer {
     display: flex;
     flex-direction: column;
+    button {
+        margin-top: 1rem;
+        background-color: pink;
+        border-radius: .4rem;
+    }
 }
 .contactform {
     display: flex;
     flex-direction: column;
+}
+input,
+textarea {
+    border: 1px solid pink;
+    margin-bottom: .6rem;
+    width: 100%;
 }

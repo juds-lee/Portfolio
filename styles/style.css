@@ -36,9 +36,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -333,7 +330,7 @@ p {
 .portfolioSection {
   background-color: #fceaaf;
   padding: 2rem 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .portfolioSection .projectContainer {
@@ -1122,11 +1119,33 @@ input[type="checkbox"]:focus + label {
 
 footer {
   background-color: #eeeac3;
-  height: 70vh;
+  height: 100%;
+  padding: 4rem 0;
 }
 
 footer h5 {
   font-size: 2rem;
+}
+
+.footerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+.formDescription {
+  text-align: right;
+}
+
+.formDescription p {
+  text-align: right;
 }
 
 .contactformContainer {
@@ -1139,6 +1158,12 @@ footer h5 {
           flex-direction: column;
 }
 
+.contactformContainer button {
+  margin-top: 1rem;
+  background-color: pink;
+  border-radius: .4rem;
+}
+
 .contactform {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1147,4 +1172,11 @@ footer h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+input,
+textarea {
+  border: 1px solid pink;
+  margin-bottom: .6rem;
+  width: 100%;
 }
