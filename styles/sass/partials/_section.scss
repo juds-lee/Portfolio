@@ -15,7 +15,6 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-
   }
   h3 {
     text-align: center;
@@ -52,7 +51,7 @@
 .portfolioSection {
     background-color: $paleYellow;
     padding: 2rem 0;
-    height: 100%;
+    height: 100vh;
     .projectContainer {
         display: flex;
         padding: 1rem 0;

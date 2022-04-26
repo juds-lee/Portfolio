@@ -1,3 +1,5 @@
+@import "./variables";
+
 @media (max-width: 1187px) {
     .modal {
         width: 70%;
@@ -63,18 +65,30 @@
         }
     }
 }
-    @media (max-width: 770px) {
+@media (max-width: 770px) {
+    .typed {
+        font-size: 4rem;
+    }
+
+    .navLink,
+    .logo {
+        font-size: 1rem;
+    }
+
     .headerWrapper {
         flex-direction: column-reverse;
     }
+
     .headerContainer {
         width: 80%;
     }
+
     .aboutMeWrapper {
         flex-direction: column;
     }
+
     .modalContent {
-        .modalDescription{
+        .modalDescription {
             height: 90%;
         }
     }
@@ -85,7 +99,7 @@
         font-size: 4rem;
     }
     .navLink, .logo {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .modalContent {
     .modalImg {
@@ -98,17 +112,33 @@
 }
 
 @media (max-width: 650px) {
+    .headerWrapper{
+        gap: .9rem;
+    }
     .portfolioSection {
         .projectContainer {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .project {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        h4 {
+            margin-top: 1rem
         }
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 570px) {
     .navHeader {
         display: none;
+    }
+    .sticky {
+        background-color: $paleYellow;
     }
     .hamburger {
         display: block;

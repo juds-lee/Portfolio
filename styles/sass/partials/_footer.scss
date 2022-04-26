@@ -1,0 +1,19 @@
+footer {
+    background-color: rgb(238, 234, 195);
+    height: 70vh;
+    h5 {
+        font-size: 2rem;
+    }
+}
+
+form > * {
+  
+}
+.contactformContainer {
+    display: flex;
+    flex-direction: column;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+}

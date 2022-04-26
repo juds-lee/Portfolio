@@ -45,10 +45,13 @@ app.typewriter = new Typewriter(app.typed, {
 app.learnMore.forEach((button) => {
    button.addEventListener("click", () => {
     app.modal.classList.add("modalActive")
+    const paragraphHeader = document.createElement("h5")
+    paragraphHeader.innerHTML = "Project Info"
     const paragraph = document.createElement("p")
     app.projectInfo.innerHTML = " "
     const image = document.createElement("img")
     app.modalImg.innerHTML = " "
+    app.projectInfo.appendChild(paragraphHeader)
     if (button === app.quiztionary) {
       paragraph.innerHTML = "Quiztionary is a dictionary game where players must match the correct word to the definition. It relies on two different API's to generate random words and to procure a matching definition. This game was creating using Vanilla.Js, HTML5, and CSS+SASS. Made in collaboration with Stephen Korzenstien"
       app.projectInfo.appendChild(paragraph)
@@ -81,9 +84,23 @@ app.closeMenuButton.addEventListener("click", () => {
 app.hamburgerMenu.addEventListener("click", () => { 
   app.slideOutNav.classList.add("openMenu")
     app.slideOutNav.classList.remove("closeMenu")
-
 });
 
 window.addEventListener("scroll",function() {
   app.stickyHeader.classList.toggle("sticky", window.scrollY > 0);
+});
+
+// taken from Alvaro Trigo
+window.addEventListener("scroll", function() {
+   const reveals = document.querySelectorAll(".reveal");
+   for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
 });
