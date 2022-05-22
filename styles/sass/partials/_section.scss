@@ -1,234 +1,106 @@
 @import"./variables";
 
 .aboutMeSection {
-    padding: 5rem 0;   
-    background-color: pink;
     height: 100%;
    display: flex;
+   padding: 6rem 0;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   gap: 6rem;
 }
+.aboutMeInfo {
+    width: 100%;
+}
+
 .aboutMeWrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    .aboutMeText {
+        margin-left: 0;
+    }
   }
   h3 {
-    text-align: center;
+    text-align: left;
     justify-content: center;
     font-size: 2.4rem;
   }
-  p {
-       text-align: center;
-  }
-.techSection{
-    background-color: $paleYellow;
+
+.headshot {
+    margin-top: 6rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
 }
+
 .techStackContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../../../assets/bgdetail.png);
-    background-repeat: no-repeat;
-    background-position: center;
     gap: 1.3em;
     h2 {
         color: rgb(49, 49, 49);
-        text-align: right;
-    }
-    .stack {
-        display: block;
+        text-align: left;
     }
     .techStackList {
+    max-width: 100%;
+    display: flex;
+    }
+    // .stack {
+    //     display: block;
+    // }
+    .techStackList {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 1.4rem;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5rem;
         // margin: 2rem 0 5rem;
     }
 }
+
 .portfolioSection {
-    background-color: $paleYellow;
-    padding: 2rem 0;
+    padding: 6rem 0;
     height: 100%;
+    background-image: url(../../../assets/starbg.png);
+    background-size: 50%;
+    ul {
+        padding-left: 0;
+    }
+    h3 {
+        margin: 0;
+    }
+    .portfolioContainer {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 5rem;
+    }
     .projectContainer {
+        background-color: rgba(225, 225, 225, 0.8);
+        border-radius: 2rem;
         display: flex;
-        padding: 1rem 0;
+        align-items: center;
+        padding: 2rem ;  
         gap: 3rem;
     }
-}
-
-.portfolioContainer {
-    padding: 1rem 0;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h2 {
-        margin-bottom: 0;
+    img {
+        width: 50%;
     }
-}
-.project {
-    position: relative;
-    width: 100%;
-
-    h4{
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 0;
-    }
-    .projectImage {
-        display: block;
-        width: 100%;
-        border-radius: .4rem;
-    }
-    .imageOverlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
+    .projectInfo {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.25s;
+        justify-content: space-around;
     }
-
-    .imageOverlay:hover>* {
-        transform: translateY(0);
-    }
-
-    .imageOverlay>* {
-        transform: translateY(-20px);
-        transition: 0.25s;
-    }
-
-    .imageOverlay:hover {
-        opacity: 1
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
 }
 
-.modalBG {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s opacity 0.5s;
-    border: 1px solid red;
-   
-}
-.modalActive {
-    visibility: visible;
-    opacity: 1;
-    z-index: 402;
-}
-
-.modalButtons {
-    display: flex;
-    justify-content: center;
-    justify-content: cenfleter;
-    text-align: center;
-    h4 {
-        font-size: 2rem;
-        padding: 0;
-        margin: 1rem 0;
-        font-weight: 500;
-    }
-}
-
-.modal {
-    background-color: white;
-    height: 90%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    .close {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        font-size: 1.5em;
-        color: grey;
-        &:hover{
-            color: black;
-        }
-    }
-}
-
-.modalContent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: left;
-    height: 92%;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    .modalImg {
-        height: 90%;
-        width: 100%;
-    }
-    img {
-        object-fit: contain;
-        height: 100%;
-        }
-}
-
-.viewButton{
-    display: flex;
-    justify-content: space-around;
-    button {
-        padding: .5rem .7rem;
-       width: 40%;
-       background-color: pink;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       cursor: pointer;
-    }
-}
 
 .descriptionWrapper {
     width: 95%;
     margin: 0 auto;
 }
-.modalDescription {
-    max-height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 3px dotted pink;
-    height: 90%;
-    margin: 0 auto;
-    h5 {
-        margin: 0;
-        padding-top: 1rem;
-        font-size: 1.5em;
-        font-weight: 500;
-    }
-    p {
-        margin: 1rem 0;
-        line-height: 1.5rem;
-        text-align: left;
-    }
-} 
+
 .techUsed{
     display: flex;
     flex-direction: row;

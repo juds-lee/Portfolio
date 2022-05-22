@@ -7,38 +7,41 @@ header {
     transition: 0.6s;
     z-index: 400;
 }
-.sticky {
-    background-color: white;
-    a, h2 {
-        color: pink
-    }
-}
+// .sticky {
+//     background-color: $paleYellow
+// }
 
 .heroSection {
-    background: $paleYellow;
+    background: $mainColor;
     height: 100vh;
+ 
 }
 nav {
     margin: 0;
 }
+
 .navHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    margin-left: 5rem;
     ul {
         padding-left: 0;
     }
     li {
         padding: 1rem;
-
+        font-family: 'Cormorant Garamond', serif;
     }
+}
+.navBar {
+    display: flex;
+    justify-content: flex-end;
 }
 .navLink {
     position: relative;
     width: 100%;
-    font-size: 1.4rem;
-    color: rgb(75, 70, 70);
+    font-size: 1.5rem;
+    color: $secondaryColor;
 }
 .navLink::after {
     content: " ";
@@ -47,7 +50,7 @@ nav {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: pink;
+    background-color: $secondaryColor;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 250ms ease-in;
@@ -58,39 +61,43 @@ nav {
 }
 
 .scrollActive {
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid $secondaryColor;
     display: inline-block;
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-}
 .navLink {
     position: relative;
     width: 100%;
 }
 
+
 .headerWrapper {
-    height:100%;
+    height: 100%;
     max-width:100%;
     display: flex;
     flex-direction: row;
-    flex-basis: 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 3rem;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: center;
 }
 .headerContainer{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .judyLee{
-        background-color: pink;
-        padding: .4rem 1.2rem;
-        border-radius: .3rem;
-    }
+    background-image: url(../../../assets/moon.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 75% 20%;
+}
+
+h1 {
+    text-align: center;
 }
 .typed {
     margin-bottom: 3rem;
@@ -98,24 +105,28 @@ nav {
 }
 .text {
     font-size: 1.5rem;
-    text-align: left;
+    text-align: center;
+}
+
+.judyLee {
+    font-weight: bold;
 }
 .viewWorksBtn {
+    text-align: center;
     font-size: 1.3rem;
     padding:1rem 1.2rem;
-    border: none;
     border-radius: .2rem;
-    background-color: pink;
+    border: 1.5px dashed black;
     margin-top: 2rem;
     cursor: pointer;
     &:hover,
     &:focus, 
     {
-    
+    background-color: $accentColor;
     }
 }
 .logo {
-    color:rgb(75, 70, 70);
+    color:$secondaryColor;
     font-weight: 400;
     margin-top: 16px;
 }

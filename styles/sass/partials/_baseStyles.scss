@@ -1,3 +1,5 @@
+@import"./variables";
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -5,8 +7,9 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $secondaryColor;
 }
+
 h1 {
     font-weight: 500;
 }
@@ -24,7 +27,7 @@ button {
     border: none;
 }
 .containerWrapper {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 h2 {
@@ -36,21 +39,12 @@ p {
 }
 
 .devIcon {
-   color: rgb(90, 90, 90);
+   color: $secondaryColor;
     font-size: 5rem;
     display: flex;
     justify-content: center;
 }
 
-.xs {
-    font-size: 4.5rem;
-}
-.portfolioIcon {
-    color: pink;
-    font-size: 2.5rem;
-    margin-left: 1rem;
-   
-}
 .block {
     display: block;
 }
@@ -64,7 +58,26 @@ html {
     scroll-behavior: smooth;
 }
 
-.fas {
-    color: rgb(169, 212, 168);
-    font-size: 2rem;
+
+.demoLink {
+    background-color:$secondaryColor;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    width: 100%;
 }
+
+.sourceLink {
+    background-color: $secondaryColor;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.demoLink:hover, .demoLink:focus, .sourceLink:hover, .sourceLink:focus {
+    background-color: white;
+    color: $secondaryColor;
+    border: 2px solid $secondaryColor;
+} 

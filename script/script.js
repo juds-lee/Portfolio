@@ -36,55 +36,55 @@ window.addEventListener("scroll", () => {
 
 app.typewriter = new Typewriter(app.typed, {
   loop: true,
-  delay: 75,
+  delay: 100,
   strings: ["Developer"],
   autoStart: true,
-  pauseFor: 2000
+  pauseFor: 15000
 });
 
-app.learnMore.forEach((button) => {
-   button.addEventListener("click", () => {
-    app.modal.classList.add("modalActive")
-    const paragraphHeader = document.createElement("h5")
-    paragraphHeader.innerHTML = "Project Info"
-    const paragraph = document.createElement("p")
-    app.projectInfo.innerHTML = " "
-    const image = document.createElement("img")
-    app.modalImg.innerHTML = " "
-    app.projectInfo.appendChild(paragraphHeader)
-    if (button === app.quiztionary) {
-      paragraph.innerHTML = "Quiztionary is a dictionary game where players must match the correct word to the definition. It relies on two different API's to generate random words and to procure a matching definition. This game was creating using Vanilla.Js, HTML5, and CSS+SASS. Made in collaboration with Stephen Korzenstien"
-      app.projectInfo.appendChild(paragraph)
-      app.viewDemo.setAttribute("href", "https://quiztionary.netlify.app/");
-      image.src = "../assets/asset1a.jpg"
-      app.modalImg.appendChild(image)
+// app.learnMore.forEach((button) => {
+//    button.addEventListener("click", () => {
+//     app.modal.classList.add("modalActive")
+//     const paragraphHeader = document.createElement("h5")
+//     paragraphHeader.innerHTML = "Project Info"
+//     const paragraph = document.createElement("p")
+//     app.projectInfo.innerHTML = " "
+//     const image = document.createElement("img")
+//     app.modalImg.innerHTML = " "
+//     app.projectInfo.appendChild(paragraphHeader)
+//     if (button === app.quiztionary) {
+//       paragraph.innerHTML = "Quiztionary is a dictionary game where players must match the correct word to the definition. It relies on two different API's to generate random words and to procure a matching definition. This game was creating using Vanilla.Js, HTML5, and CSS+SASS. Made in collaboration with Stephen Korzenstien"
+//       app.projectInfo.appendChild(paragraph)
+//       app.viewDemo.setAttribute("href", "https://quiztionary.netlify.app/");
+//       image.src = "../assets/asset1a.jpg"
+//       app.modalImg.appendChild(image)
 
-    } else if (button === app.underthesea){
-      paragraph.innerHTML = "Under the Sea is a PSD conversion made with HTML5, CSS+SASS and Javascript. It is fully responsive and has a functioning image coursel, comments section, and menu."
-      app.projectInfo.appendChild(paragraph)
-       app.viewDemo.setAttribute("href", "https://quiztionary.netlify.app/");
-        image.src = "../assets/asset2a.jpg"
-        image.classList.add("fishImg");
-        app.modalImg.appendChild(image)
+//     } else if (button === app.underthesea){
+//       paragraph.innerHTML = "Under the Sea is a PSD conversion made with HTML5, CSS+SASS and Javascript. It is fully responsive and has a functioning image coursel, comments section, and menu."
+//       app.projectInfo.appendChild(paragraph)
+//        app.viewDemo.setAttribute("href", "https://quiztionary.netlify.app/");
+//         image.src = "../assets/asset2a.jpg"
+//         image.classList.add("fishImg");
+//         app.modalImg.appendChild(image)
       
-    }
-})
-});
+//     }
+// })
+// });
 
-app.closeButton.addEventListener("click", () => { 
-  app.modal.classList.remove("modalActive")
-});
+// app.closeButton.addEventListener("click", () => { 
+//   app.modal.classList.remove("modalActive")
+// });
 
 
-app.closeMenuButton.addEventListener("click", () => { 
-  app.slideOutNav.classList.add("closeMenu")
-   app.slideOutNav.classList.remove("openMenu")
-});
+// app.closeMenuButton.addEventListener("click", () => { 
+//   app.slideOutNav.classList.add("closeMenu")
+//    app.slideOutNav.classList.remove("openMenu")
+// });
 
-app.hamburgerMenu.addEventListener("click", () => { 
-  app.slideOutNav.classList.add("openMenu")
-    app.slideOutNav.classList.remove("closeMenu")
-});
+// app.hamburgerMenu.addEventListener("click", () => { 
+//   app.slideOutNav.classList.add("openMenu")
+//     app.slideOutNav.classList.remove("closeMenu")
+// });
 
 window.addEventListener("scroll",function() {
   app.stickyHeader.classList.toggle("sticky", window.scrollY > 0);

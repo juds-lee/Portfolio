@@ -9,27 +9,26 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/453ecd0b52.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+     
     <title>It's me, Judy, Welcome!</title>
 </head>
-
 <body>
-<header>
+    <header>
         <nav>
-            <div class="containerWrapper">
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#header-nav"><span></span><span></span><span></span></button> -->
                 <div class="navHeader">
                     <ul class="navBar">
-                        <li class="navItem"><a class="navLink home" href="#home">Home</a></li>
+                        <!-- <li class="navItem"><a class="navLink home" href="#home">Home</a></li> -->
                         <li class="navItem"><a class="navLink about" href="#about">About Me</a></li>
                         <li class="navItem"><a class="navLink myWorks" href="#myWorks">My Works</a></li>
                         <li class="navItem"><a class="navLink contact" href="#contact">Contact Me</a></li>
                     </ul>
-                    <div>
-                        <h2 class="logo"> {Judy Lee} </h2>
-                    </div>
                 </div>
-            </div>
+           
             <button class="hamburger"><i class="fas fa-hamburger"></i></button>
         </nav>
         
@@ -48,8 +47,7 @@
                 </ul>
             </nav>
         </div>
-    
-</header>
+    </header>
     <section id="home" class="heroSection">
             <div class="containerWrapper headerWrapper">
                 <div class="headerContainer">
@@ -60,28 +58,26 @@
                         <button class="viewWorksBtn"><a href="#myWorks">View my works</a></button>
                     </div>
                 </div>
-                <div>
-                    <img src="./assets/Open Peeps - Avatar and Backdrop.png" class="headshot" alt="cartoon portrait of girl">
-                </div>
             </div>
     </section>
+    
     <section class="aboutMeSection" id="about">
-    <div class="aboutMeWrapper reveal containerWrapper">
-        <div class="aboutMeInfo">
-            <h2 class="h2Header">About Me</h2>
-            <h3>My name is <span>Judy Lee</span></h3>
-            <p class="aboutMeText">I am a frontend web-developer, ice cream connisseur, and former teacher. As a developer with a background in teaching, I am driven to
-            make positive impact in peoples lives by delivering user-friendly experiences.</p>
-        
-            <p class="aboutMeText">In the classroom, I got to show off my creativity in my lessons. Now, in the digital space, I get to flex my creativity
-            and create fun user-focused applications using CSS+SASS and React.Js.</p>
-            <p class="aboutMeText">Outside of coding, I love going for runs, finding new resturants, or cozying up on my sofa with a good book!</p>
+        <div class="aboutMeWrapper reveal containerWrapper">
+            <div class="aboutMeInfo">
+                <h2 class="h2Header">About Me</h2>
+                <h3>My name is <span>Judy Lee</span></h3>
+                <p class="aboutMeText">I am a frontend web-developer, ice cream connisseur, and former teacher. As a developer with a background in teaching, I am driven to
+                make positive impact in peoples lives by delivering user-friendly experiences.</p>
+                <p class="aboutMeText">In the classroom, I got to show off my creativity in my lessons. Now, in the digital space, I get to flex my creativity
+                and create fun user-focused applications using CSS+SASS and React.Js.</p>
+                <p class="aboutMeText">Outside of coding, I love going for runs, finding new resturants, or cozying up on my sofa with a good book!</p>
+            </div>
+            <div>
+                <img src="./assets/headshot.png" class="headshot" alt="a headshot of Judy lee outdoors">
+            </div>
         </div>
-    </div>
-    </section>
-    <section class="techSection">
         <div class="techStackContainer containerWrapper">
-            <h2>My tech stack:</h2>
+            <h2>My Skills</h2>
             <ul class="techStackList">
                 <li><i class="devIcon devIcon devicon-html5-plain-wordmark"></i></li>
                 <li><i class="devIcon devicon-css3-plain-wordmark"></i></li>
@@ -91,113 +87,84 @@
                 <li><i class="devIcon devicon-git-plain-wordmark"></i></li>
                 <li><i class="devIcon devicon-jquery-plain-wordmark"></i></li>
                 <li><i class="devIcon devicon-javascript-plain xs"></i></li>
-                <li><i class="devIcon devicon-bootstrap-plain"></i></li>
+                <!-- <li><i class="devIcon devicon-bootstrap-plain"></i></li> -->
             </ul>
         </div>
     </section>
 
     <section id="myWorks" class="portfolioSection" >
-        <div class="portfolioContainer reveal containerWrapper">
-            <h2>My projects</h2>
+        <h2 class="containerWrapper">My Projects</h2>
+        <div class="portfolioContainer reveal containerWrapper">  
             <div class="projectContainer">
-                <div class="project">
-                    <a class="learnMore" id="quiztionary">
-                            <img src="./assets/asset1.png" class="projectImage"  alt="example photo of project">
-                            <!-- <h4>Quiztionary</h4> -->
-                        <div class="imageOverlay">
-                            <p class="learnMore">click to learn more</p>
-                        </div>
-                        <a>
-                            <h4>Quiztionary</h4>
-                        </a>
-                    </a>
-                   
+                <img src="https://www.judslee.ca/assets/whosthatpokemon.png" alt="">
+            <div class="projectInfo">
+                <h3>Who's that Pokemon</h3>
+                <ul>
+                    <button><a class="demoLink" href="">Demo</a></button>
+                    <button><a class="sourceLink" href="">Source Code</a></button>
+                </ul>
+                <p>Who's that Pokemon is a guessing game reminiscent to the one that played on TV during my childhood. Users must guess the correct pokemon based on their shadows and submit their answer. With every correct guess, the corresponding Pokemon will get added to their Pokedex.</p>
+                <p>This game was creating using React, HTML5, and
+                CSS.</p>
+            </div>
+            </div>
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <h3>Quiztionary</h3>
+                    <ul>
+                        <button><a class="demoLink" href="">Demo</a></button>
+                        <button><a class="sourceLink" href="">Source Code</a></button> 
+                    </ul>
+                    <p>Quiztionary is a multiple choice dictionary game where players must match the correct word to the definition. It relies on two different
+                    API's to generate random words (Datamuse API) and to procure a matching definition (Merriam-Webster Dictionary API). Made in collaboration with Stephen Korzenstien</p> 
+                    <p>This game was creating using Vanilla.Js, HTML5, and Sass.</p>  
                 </div>
-                <div class="project">
-                    <a class="learnMore" id="underthesea">
-                        <img src="./assets/asset2.png" class="projectImage" alt="example photo of project">
-                        <!-- <h4>Quiztionary</h4> -->
-                        <div class="imageOverlay">
-                            <p class="learnMore">click to learn more</p>
-                        </div>
-                        <a>
-                            <h4>Under The Sea</h4>
-                        </a>
-                    </a>
-                
+                <img src="https://www.judslee.ca/assets/quiztionary.png" alt="">
+            </div>
+            <div class="projectContainer">
+                <img src="https://www.judslee.ca/assets/underthesea.png" alt="">
+                <div class="projectInfo">
+                    <h3>Under The Sea</h3>
+                <ul>
+                    <button><a class="demoLink" href="">Demo</a></button>
+                    <button><a class="sourceLink" href="">Source Code</a></button>
+                </ul>
+                    <p>Under the Sea is a photoshop design conversion created with mobile users in mind. It is fully responsive with a functioning
+                    image coursel, comments section, and menu.</p>
+                    <p>This app was created using Vanilla.Js HTML5, and Sass.</p>
                 </div>
-                <div class="project">
-                    <a class="learnMore" id="quiztionary">
-                        <img src="./assets/asset1.png" class="projectImage" alt="example photo of project">
-                        <!-- <h4>Quiztionary</h4> -->
-                        <div class="imageOverlay">
-                            <p class="learnMore">click to learn more</p>
-                        </div>
-                        <a>
-                            <h4>Quiztionary</h4>
-                        </a>
-                    </a>
-
-                </div>
+        
             </div>
         </div>
     </section>
-    <section>
-        <div class="modalBG">
-            <div class="modal">
-                <div class="modalButtons">
-                    <h4>Quiztionary</h4>
-                    <button class="close">X</button> 
-                </div>
-                <div class="modalContent">
-                    <div class="modalImg">
-                
-                    </div>
-                    <div class="modalDescription">
-                        <div class="projectInfo descriptionWrapper">
-                            <h5>Project Info</h5>
-                        </div>
-                        <div class="techUsed descriptionWrapper">
-                            <p>technologies used:
-                                <li class="techIcons"><i class="devIcon techIcon devicon-sass-original portfolioIcon"></i></li>
-                                <li class="techIcons"><i class="devIcon devicon-javascript-plain xs portfolioIcon"></i></li>
-                                <li class="techIcons"><i class="devIcon devIcon devicon-html5-plain-wordmark portfolioIcon"></i></li>
-                            </p>
-                        </div>
-                        <div class="projectDetails descriptionWrapper">
-                            <div class="viewButton">
-                                <button><a class="demoButton" href="">View Demo</a></button>
-                                <button class="sourceButton"><a href="">View Source Code</a></button>
-                            </div>
-                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
 
     <footer id="contact">
         <div class="containerWrapper footerWrapper">
-       <div class="formDescription">
-           <h2>I'd Love to hear from you</h2>
-           <p>Please feel free to connect with me or send me an email!</p>
-       </div>
-    <div class="contactformContainer ">
-        <form action="https://formspree.io/f/mdobpeey" class="contactform" method="POST">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-    
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Email address">
-         
-            <label for="message" class="sr-only">Message</label>
-            <textarea name="message" id="message" cols="40" rows="5" placeholder="Message for me"></textarea>
-            <button class="submit">Submit</button>
+            <div class="formDescription">
+                <div>
+                    <h2>I'd Love to hear from you</h2>
+                    <p>I am currently available for work. Please feel free to connect with me or send me an email!</p>
+                </div>
+                <div class="socialIcons">
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="contactformContainer ">
+                <form action="https://formspree.io/f/mdobpeey" class="contactform" method="POST">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" placeholder="Name">
+            
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" placeholder="Email address">
+                
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" cols="90" rows="10" placeholder="Message for me"></textarea>
+                    <button class="submit">Submit</button>
 
-        </form>
-    </div>
-    </div>
+                </form>
+            </div>
+        </div>
     </footer>
     
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>

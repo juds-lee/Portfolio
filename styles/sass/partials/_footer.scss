@@ -1,6 +1,5 @@
 footer {
-    background-color: rgb(238, 234, 195);
-    height: 100%;;
+    height: 100%;
     padding: 4rem 0;
    
     h5 {
@@ -9,15 +8,20 @@ footer {
 }
 .footerWrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+   justify-content: space-between;
 }
 
 .formDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: right;
     p {
         text-align: right;
+    }
+    i {
+        font-size: 3rem;
+        margin: 3rem 0 0 3rem;
     }
 }
 .contactformContainer {
@@ -25,8 +29,10 @@ footer {
     flex-direction: column;
     button {
         margin-top: 1rem;
-        background-color: pink;
+        background-color: $accentColor;
         border-radius: .4rem;
+        font-size: 1.5rem;
+        padding: 1rem 0;
     }
 }
 .contactform {
@@ -35,7 +41,11 @@ footer {
 }
 input,
 textarea {
-    border: 2px solid pink;
+    border: 2px solid $accentColor;
     margin-bottom: .6rem;
     width: 100%;
+}
+
+input {
+    height: 3rem;
 }
