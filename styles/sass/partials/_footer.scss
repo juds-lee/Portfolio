@@ -1,14 +1,13 @@
 footer {
     height: 100%;
     padding: 4rem 0;
-   
     h5 {
         font-size: 2rem;
     }
 }
 .footerWrapper {
     display: flex;
-   justify-content: space-between;
+   gap: 3rem;
 }
 
 .formDescription {

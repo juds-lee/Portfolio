@@ -7,14 +7,14 @@ header {
     transition: 0.6s;
     z-index: 400;
 }
-// .sticky {
-//     background-color: $paleYellow
-// }
+.sticky {
+    background-color: $mainColor;
+    height: inherit;
+}
 
 .heroSection {
     background: $mainColor;
-    height: 100vh;
- 
+    height: 100vh; 
 }
 nav {
     margin: 0;
@@ -70,7 +70,6 @@ nav {
     width: 100%;
 }
 
-
 .headerWrapper {
     height: 100%;
     max-width:100%;
@@ -84,16 +83,19 @@ nav {
     display: flex;
     justify-content: center;
 }
-.headerContainer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(../../../assets/moon.png);
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: 75% 20%;
+
+.headerContainer {
+    position: relative;
+    z-index: 5;
+}
+
+.moon {
+    position: absolute;
+    z-index: -1;
+    width: 28rem;
+    height: 28rem;
+    top: -13rem;
+    left: 10rem;
 }
 
 h1 {

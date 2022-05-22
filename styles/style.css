@@ -9,6 +9,11 @@ header {
   z-index: 400;
 }
 
+.sticky {
+  background-color: #F2F1EF;
+  height: inherit;
+}
+
 .heroSection {
   background: #F2F1EF;
   height: 100vh;
@@ -117,22 +122,17 @@ nav {
 }
 
 .headerContainer {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url(../../../assets/moon.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: 75% 20%;
+  position: relative;
+  z-index: 5;
+}
+
+.moon {
+  position: absolute;
+  z-index: -1;
+  width: 28rem;
+  height: 28rem;
+  top: -13rem;
+  left: 10rem;
 }
 
 h1 {
@@ -164,7 +164,7 @@ h1 {
 }
 
 .viewWorksBtn:hover, .viewWorksBtn:focus {
-  background-color: #e3e29a;
+  background-color: #fffeac;
 }
 
 .logo {
@@ -395,13 +395,18 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .portfolioSection p {
   font-size: 1.2rem;
   line-height: 1.6rem;
+}
+
+.portfolioSection p:last-child {
+  margin-top: 1rem;
 }
 
 .descriptionWrapper {
@@ -800,62 +805,78 @@ input[type="checkbox"]:focus + label {
   display: none;
 }
 
-@media (max-width: 1187px) {
-  .modal {
-    width: 70%;
+@media (max-width: 1000px) {
+  .portfolioSection .projectContainer {
+    border-radius: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1;
+    gap: 1rem;
   }
-  .modalContent .modalImg {
-    width: 90%;
+  .portfolioSection img {
+    width: 100%;
+  }
+  .portfolioSection ul {
+    margin: 1.3rem 0;
+  }
+  .portfolioSection .projectInfo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projectContainer:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 1150px) {
-  .headerContainer {
-    width: 50%;
-  }
-  .headerContainer .judyLee {
-    padding: .2rem 1rem;
-  }
   .typed {
     font-size: 5rem;
     margin-bottom: 2rem;
   }
 }
 
-@media (max-width: 945px) {
-  .modal {
-    width: 80%;
-  }
-  .modalContent {
+@media (max-width: 900px) {
+  .aboutMeWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .modalContent .modalImg {
-    width: 90%;
+  .aboutMeWrapper .aboutMeText {
+    width: 100%;
   }
-  .modalContent .modalDescription {
-    margin-right: 1rem;
+  .headshot {
+    margin-top: 2rem;
+    border-radius: 10%;
   }
-  .modalContent .modalDescription p {
-    font-size: .8rem;
-    line-height: 1.2rem;
-  }
-}
-
-@media (max-width: 820px) {
-  .modal {
-    width: 80%;
-    height: 80%;
-  }
-  .modalContent .modalImg {
-    width: 90%;
-  }
-  .modalContent .viewButton button {
-    padding: .5rem .7rem;
-    margin-bottom: 1rem;
-    width: 40%;
-    font-size: .8rem;
+  .moon {
+    width: 24rem;
+    height: 24rem;
+    top: -10rem;
+    left: 10rem;
   }
 }
 
@@ -863,9 +884,8 @@ input[type="checkbox"]:focus + label {
   .typed {
     font-size: 4rem;
   }
-  .navLink,
-  .logo {
-    font-size: 1rem;
+  .navLink {
+    font-size: 1.4rem;
   }
   .headerWrapper {
     -webkit-box-orient: vertical;
@@ -876,37 +896,13 @@ input[type="checkbox"]:focus + label {
   .headerContainer {
     width: 80%;
   }
-  .aboutMeWrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .moon {
+    width: 18rem;
+    height: 18rem;
+    top: -9rem;
+    left: 17rem;
   }
-  .modalContent .modalDescription {
-    height: 90%;
-  }
-}
-
-@media (max-width: 700px) {
-  .typed {
-    font-size: 4rem;
-  }
-  .navLink, .logo {
-    font-size: 1rem;
-  }
-  .modalContent .modalImg {
-    display: none;
-  }
-  .modalContent .modalDescription {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 650px) {
-  .headerWrapper {
-    gap: .9rem;
-  }
-  .portfolioSection .projectContainer {
+  .techStackContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -914,20 +910,34 @@ input[type="checkbox"]:focus + label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    gap: 1em;
   }
-  .project {
-    position: relative;
-    width: 50%;
-    height: 50%;
+  .techStackContainer .techStackList {
+    gap: 3rem;
   }
-  .project h4 {
-    margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  .headerWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .headerContainer {
+    width: 80%;
+  }
+  .moon {
+    left: -20rem;
+    top: 0;
+    width: 23rem;
+    height: 23rem;
+  }
+  .typed {
+    font-size: 3.5rem;
+  }
+  .devIcon {
+    font-size: 4rem;
   }
 }
 
@@ -940,6 +950,16 @@ input[type="checkbox"]:focus + label {
   }
   .hamburger {
     display: block;
+  }
+  .techStackContainer h2 {
+    font-size: 2.5rem;
+  }
+  .techStackContainer .techStackList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
 
@@ -971,9 +991,7 @@ footer h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 3rem;
 }
 
 .formDescription {
@@ -1011,7 +1029,7 @@ footer h5 {
 
 .contactformContainer button {
   margin-top: 1rem;
-  background-color: #e3e29a;
+  background-color: #fffeac;
   border-radius: .4rem;
   font-size: 1.5rem;
   padding: 1rem 0;
@@ -1029,7 +1047,7 @@ footer h5 {
 
 input,
 textarea {
-  border: 2px solid #e3e29a;
+  border: 2px solid #fffeac;
   margin-bottom: .6rem;
   width: 100%;
 }
