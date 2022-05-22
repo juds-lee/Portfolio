@@ -30,7 +30,6 @@ window.addEventListener("scroll", () => {
     
     link.classList.add("scrollActive");
   }
-  console.log(currentSection)
  })
 })
 

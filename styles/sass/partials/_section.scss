@@ -43,14 +43,10 @@
     max-width: 100%;
     display: flex;
     }
-    // .stack {
-    //     display: block;
-    // }
     .techStackList {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 5rem;
-        // margin: 2rem 0 5rem;
     }
 }
 
