@@ -12,8 +12,20 @@ app.underthesea = document.querySelector("#underthesea")
 app.viewDemo = document.querySelector(".demoButton")
 app.modalImg = document.querySelector(".modalImg")
 app.closeMenuButton = document.querySelector(".closeMenuButton")
- app.slideOutNav = document.querySelector(".slideOutNav")
- app.hamburgerMenu = document.querySelector(".hamburger")
+app.slideOutNav = document.querySelector(".slideOutNav")
+app.hamburgerMenu = document.querySelector(".hamburger")
+
+app.navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".navBar");
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("navActive");
+
+  });
+
+};
+
+app.navSlide();
 
 window.addEventListener("scroll", () => {
  let currentSection = ""; 
@@ -27,7 +39,6 @@ window.addEventListener("scroll", () => {
  app.navLink.forEach(link => {
   link.classList.remove("scrollActive");
   if (link.classList.contains(currentSection)){
-    
     link.classList.add("scrollActive");
   }
  })
@@ -38,7 +49,7 @@ app.typewriter = new Typewriter(app.typed, {
   delay: 100,
   strings: ["Developer"],
   autoStart: true,
-  pauseFor: 15000
+  pauseFor: 2000
 });
 
 // app.learnMore.forEach((button) => {

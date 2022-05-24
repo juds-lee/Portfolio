@@ -65,7 +65,8 @@ html {
     padding: .5rem 1rem;
     border-radius: 1rem;
     color: white;
-    width: 100%;
+    border: 2px solid $mainColor;
+    
 }
 
 .sourceLink {
@@ -80,4 +81,5 @@ html {
     background-color: white;
     color: $secondaryColor;
     border: 2px solid $secondaryColor;
+ 
 } 

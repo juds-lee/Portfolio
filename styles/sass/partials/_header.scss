@@ -103,7 +103,7 @@ h1 {
 }
 .typed {
     margin-bottom: 3rem;
-    max-width: 100%;
+    max-width: 24rem;
 }
 .text {
     font-size: 1.5rem;
@@ -122,13 +122,11 @@ h1 {
     margin-top: 2rem;
     cursor: pointer;
     &:hover,
-    &:focus, 
-    {
-    background-color: $accentColor;
+    &:focus {
+        background-color: $accentColor;
     }
 }
-.logo {
-    color:$secondaryColor;
-    font-weight: 400;
-    margin-top: 16px;
+
+.burger {
+    display: none;
 }

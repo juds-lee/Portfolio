@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,42 +8,26 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/453ecd0b52.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Poppins:wght@200&display=swap"
-    rel="stylesheet">
-     
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">   
     <title>Judy Lee</title>
 </head>
 <body>
     <header>
-        <nav>
-                <div class="navHeader">
-                    <ul class="navBar">
-                        <!-- <li class="navItem"><a class="navLink home" href="#home">Home</a></li> -->
-                        <li class="navItem"><a class="navLink about" href="#about">About Me</a></li>
-                        <li class="navItem"><a class="navLink myWorks" href="#myWorks">My Works</a></li>
-                        <li class="navItem"><a class="navLink contact" href="#contact">Contact Me</a></li>
-                    </ul>
-                </div>
-           
-            <button class="hamburger"><i class="fas fa-hamburger"></i></button>
-        </nav>
-        
-        <div class="slideOutNav">
-            <div class="buttonContainer">
-                <button class="closeMenuButton">
-                  X
-                </button>
-            </div>
-            <nav>
-                <ul class="mainMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#myWorks">My Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <nav class="navHeader"> 
+                <ul class="navBar">
+                    <li><a class="navLink home" href="#home">Home</a></li>
+                    <li><a class="navLink myWorks" href="#myWorks">My Works</a></li>
+                    <li><a class="navLink about" href="#about">About Me</a></li>
+                    <li><a class="navLink contact" href="#contact">Contact Me</a></li>
                 </ul>
-            </nav>
-        </div>
+            <button class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+           
+        </nav>
     </header>
     <section id="home" class="heroSection">
             <div class="containerWrapper headerWrapper">
@@ -55,11 +38,9 @@
                     <div class="headerLinks">
                         <button class="viewWorksBtn"><a href="#myWorks">View my works</a></button>
                     </div>
-                    
                          <div class="moon">
                             <img class="moonbg" src="./assets/moon.png" alt="image of Moon">
                         </div>
-                
                 </div>
                
             </div>
@@ -108,7 +89,7 @@
                         <button><a class="sourceLink" href="">Source Code</a></button>
                     </ul>
                 <p>Who's that Pokemon is a guessing game reminiscent to the one that played on TV during my childhood. Users must guess the correct pokemon based on their shadows and submit their answer. With every correct guess, the corresponding Pokemon will get added to their Pokedex.</p>
-                <p>This game was creating using React, HTML5, and
+                <p>This game was created using React, HTML5, and
                 CSS.</p>
             </div>
             </div>
@@ -121,7 +102,7 @@
                     </ul>
                     <p>Quiztionary is a multiple choice dictionary game where players must match the correct word to the definition. It relies on two different
                     API's to generate random words (Datamuse API) and to procure a matching definition (Merriam-Webster Dictionary API). Made in collaboration with Stephen Korzenstein.</p> 
-                    <p>This game was creating using Vanilla.Js, HTML5, and Sass.</p>  
+                    <p>This game was created using Vanilla.Js, HTML5, and Sass.</p>  
                 </div>
                 <img src="https://www.judslee.ca/assets/quiztionary.png" alt="">
             </div>

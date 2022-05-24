@@ -28,10 +28,11 @@ footer {
     flex-direction: column;
     button {
         margin-top: 1rem;
-        background-color: $accentColor;
+        background-color: $secondaryColor;
         border-radius: .4rem;
         font-size: 1.5rem;
         padding: 1rem 0;
+        color: white;
     }
 }
 .contactform {
@@ -40,11 +41,15 @@ footer {
 }
 input,
 textarea {
-    border: 2px solid $accentColor;
+    border: 2px solid $secondaryColor;
     margin-bottom: .6rem;
     width: 100%;
+    padding-left: .7rem;
 }
 
 input {
     height: 3rem;
+}
+textarea {
+    padding-top: .7rem;
 }

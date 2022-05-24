@@ -141,7 +141,7 @@ h1 {
 
 .typed {
   margin-bottom: 3rem;
-  max-width: 100%;
+  max-width: 24rem;
 }
 
 .text {
@@ -167,10 +167,8 @@ h1 {
   background-color: #fffeac;
 }
 
-.logo {
-  color: #4b4646;
-  font-weight: 400;
-  margin-top: 16px;
+.burger {
+  display: none;
 }
 
 body {
@@ -244,7 +242,7 @@ html {
   padding: .5rem 1rem;
   border-radius: 1rem;
   color: white;
-  width: 100%;
+  border: 2px solid #F2F1EF;
 }
 
 .sourceLink {
@@ -335,6 +333,7 @@ h3 {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
+  padding-left: 0;
 }
 
 .portfolioSection {
@@ -738,78 +737,6 @@ h2 {
   font-size: 3rem;
 }
 
-input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-}
-
-input[type="checkbox"]:checked ~ .slideOutNav {
-  left: 0;
-}
-
-input[type="checkbox"]:hover + label
-input[type="checkbox"]:focus + label {
-  border: 1px dotted red;
-}
-
-.slideOutNav {
-  padding: 35px 50px;
-  border-right: 1px solid;
-  width: 100%;
-  max-width: 506px;
-  height: 100vh;
-  background-color: white;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  left: -506px;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
-}
-
-.slideOutNav .buttonContainer {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.slideOutNav li {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
-.buttonContainer {
-  padding: 1rem;
-}
-
-.openMenu {
-  top: 0;
-  left: 0;
-  z-index: 20;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
-}
-
-.closeMenu {
-  left: -506px;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
-}
-
-.hamburger {
-  position: absolute;
-  font-size: 2rem;
-  padding: 2rem 0 0 2rem;
-  display: none;
-}
-
 @media (max-width: 1000px) {
   .portfolioSection .projectContainer {
     border-radius: 2rem;
@@ -962,14 +889,14 @@ input[type="checkbox"]:focus + label {
   .devIcon {
     font-size: 4rem;
   }
+  .judyLee {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 570px) {
   .sticky {
     background-color: inherit;
-  }
-  .navHeader {
-    display: none;
   }
   .hamburger {
     display: block;
@@ -982,7 +909,70 @@ input[type="checkbox"]:focus + label {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 2rem;
+  }
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #888888;
+    margin: 5px;
+    position: relative;
+    top: 3;
+    left: 0;
+    z-index: 500;
+  }
+  .burger {
+    display: block;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    font-size: 1.4rem;
+    color: #4b4646;
+  }
+  .navBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding-bottom: 8rem;
+    gap: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #4b4646;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .navBar a {
+    color: white;
+  }
+  .navActive {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .close {
+    position: absolute;
+    top: 6;
+    left: 1rem;
+    font-size: 1.4rem;
+    z-index: 1000;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -1013,9 +1003,6 @@ input[type="checkbox"]:focus + label {
   .headshot {
     width: 250px;
     height: 250px;
-  }
-  .devIcon {
-    font-size: 3rem;
   }
   .techStackContainer h2 {
     font-size: 2rem;
@@ -1088,10 +1075,11 @@ footer h5 {
 
 .contactformContainer button {
   margin-top: 1rem;
-  background-color: #fffeac;
+  background-color: #4b4646;
   border-radius: .4rem;
   font-size: 1.5rem;
   padding: 1rem 0;
+  color: white;
 }
 
 .contactform {
@@ -1106,11 +1094,16 @@ footer h5 {
 
 input,
 textarea {
-  border: 2px solid #fffeac;
+  border: 2px solid #4b4646;
   margin-bottom: .6rem;
   width: 100%;
+  padding-left: .7rem;
 }
 
 input {
   height: 3rem;
+}
+
+textarea {
+  padding-top: .7rem;
 }
