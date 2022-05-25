@@ -20,7 +20,6 @@ app.navSlide = () => {
   const nav = document.querySelector(".navBar");
   burger.addEventListener("click", () => {
     nav.classList.toggle("navActive");
-
   });
 
 };
