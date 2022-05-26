@@ -33,8 +33,14 @@ footer {
         font-size: 1.5rem;
         padding: 1rem 0;
         color: white;
+        border: 2px solid $mainColor;
+            &:hover,
+            &:focus {
+                background-color:rgb(120, 112, 112); 
+            }
+        }
     }
-}
+
 .contactform {
     display: flex;
     flex-direction: column;
@@ -53,3 +59,4 @@ input {
 textarea {
     padding-top: .7rem;
 }
+
