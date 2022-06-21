@@ -772,7 +772,7 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .projectContainer:nth-child(2) {
+  .projectContainer:nth-child(even) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
