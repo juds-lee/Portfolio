@@ -21,7 +21,6 @@ app.navSlide = () => {
   burger.addEventListener("click", () => {
     nav.classList.toggle("navActive");
   });
-
 };
 
 app.navSlide();
